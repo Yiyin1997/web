@@ -15,9 +15,8 @@ import numpy as np
 
 # app.py  
   
-# 加载模型  
-model_path = '/mount/src/models/1.joblib'     # 如果文件不在当前目录，请提供完整路径  
-model = joblib.load(model_path)  
+# 加载模型    # 如果文件不在当前目录，请提供完整路径  
+model = joblib.load('model.pkl')  
   
 # 假设特征名称如下，根据实际情况调整  
 feature_names = ['使用呼吸机时间', '体重', 'apache2评分', '喂养途径', '镇静药', '镇痛药', '白蛋白']  
