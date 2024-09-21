@@ -16,7 +16,7 @@ import numpy as np
 # app.py  
   
 # 加载模型  
-model = joblib.load(1.joblib)  
+model = joblib.load('1.joblib')  
   
 # 假设特征名称如下，根据实际情况调整  
 feature_names = ['使用呼吸机时间', '体重', 'apache2评分', '喂养途径', '镇静药', '镇痛药', '白蛋白']  
