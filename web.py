@@ -16,8 +16,14 @@ import numpy as np
 # app.py  
   
 # 加载模型  
-model_path = '/mount/src/web1.joblib'  # 如果文件不在当前目录，请提供完整路径  
-model = joblib.load(model_path) 
+import os  
+  
+# 获取当前脚本的目录  
+current_dir = os.path.dirname(os.path.abspath(__file__))  
+  
+# 构造模型的完整路径  
+model_path = os.path.join(current_dir,  '1.joblib')    # 如果文件不在当前目录，请提供完整路径  
+model = joblib.load(model_path)  
   
 # 假设特征名称如下，根据实际情况调整  
 feature_names = ['使用呼吸机时间', '体重', 'apache2评分', '喂养途径', '镇静药', '镇痛药', '白蛋白']  
