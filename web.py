@@ -16,13 +16,7 @@ import numpy as np
 # app.py  
   
 # 加载模型  
-import os  
-  
-# 获取当前脚本的目录  
-current_dir = os.path.dirname(os.path.abspath(__file__))  
-  
-# 构造模型的完整路径  
-model_path = os.path.join(current_dir,  '1.joblib')    # 如果文件不在当前目录，请提供完整路径  
+model_path = '/mount/src/models/1.joblib'     # 如果文件不在当前目录，请提供完整路径  
 model = joblib.load(model_path)  
   
 # 假设特征名称如下，根据实际情况调整  
