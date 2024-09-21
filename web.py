@@ -16,7 +16,7 @@ import numpy as np
 # app.py  
   
 # 加载模型  
-model_path = 'D:/jupyter/UntitledFolder/1.joblib'  # 如果文件不在当前目录，请提供完整路径  
+model_path = '1.joblib'  # 如果文件不在当前目录，请提供完整路径  
 model = joblib.load(model_path)  
   
 # 假设特征名称如下，根据实际情况调整  
